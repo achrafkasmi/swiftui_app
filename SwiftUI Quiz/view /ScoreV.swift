@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct ScoreView: View {
     @State var sheet: Bool = false
@@ -47,7 +48,7 @@ struct ScoreView: View {
                 Spacer()
                 Button(action: {
                     results.removeAll()
-                    let score = scoreViewModel.percentage
+                    var score = scoreViewModel.percentage
                     results.append("Hello! I passed the quiz, my current score is: \(score)% ")
                     sheet.toggle()
                 }, label: {
@@ -90,3 +91,4 @@ struct ShareSheet: UIViewControllerRepresentable {
     func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
     }
 }
+
