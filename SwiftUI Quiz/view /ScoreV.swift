@@ -77,6 +77,7 @@ struct ScoreView: View {
 struct ScoreView_Previews: PreviewProvider {
     static var previews: some View {
         ScoreView(scoreViewModel: ScoreViewModel(correctGuesses: 5, incorrectGuesses: 3))
+            //.foregroundColor(.init(white: 0.7))
     }
 }
 
