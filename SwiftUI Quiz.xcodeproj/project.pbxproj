@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2302A44A2A152E7C00946E9F /* progress bar .swift in Sources */ = {isa = PBXBuildFile; fileRef = 2302A4492A152E7C00946E9F /* progress bar .swift */; };
 		23393FBE2A028C5B00000D77 /* SplashscreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23393FBD2A028C5B00000D77 /* SplashscreenView.swift */; };
 		233DA0E228FEE1E20074AB4A /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233DA0E128FEE1E20074AB4A /* Main.swift */; };
 		233DA0E628FEE1E30074AB4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 233DA0E528FEE1E30074AB4A /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2302A4492A152E7C00946E9F /* progress bar .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "progress bar .swift"; sourceTree = "<group>"; };
 		23393FBD2A028C5B00000D77 /* SplashscreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashscreenView.swift; sourceTree = "<group>"; };
 		233DA0DE28FEE1E20074AB4A /* SwiftUI Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		233DA0E128FEE1E20074AB4A /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				233DA10B28FEED670074AB4A /* ScoreV.swift */,
 				23EB6B57290F42DC00A2D450 /* shimmerwelcome.swift */,
 				23EB6B592910221300A2D450 /* choiceOfLevel.swift */,
+				2302A4492A152E7C00946E9F /* progress bar .swift */,
 				233DA0E528FEE1E30074AB4A /* Assets.xcassets */,
 			);
 			path = "view ";
@@ -199,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2302A44A2A152E7C00946E9F /* progress bar .swift in Sources */,
 				23393FBE2A028C5B00000D77 /* SplashscreenView.swift in Sources */,
 				23EB6B5A2910221300A2D450 /* choiceOfLevel.swift in Sources */,
 				233DA10028FEE9FB0074AB4A /* Score.swift in Sources */,
