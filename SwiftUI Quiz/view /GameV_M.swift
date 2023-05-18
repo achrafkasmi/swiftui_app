@@ -15,7 +15,7 @@ class GameViewModel: ObservableObject {
         game.currentQuestion
     }
    var questionProgressText: String {
-      "\(game.currentQuestionIndex + 1) /\(game.numberOfQuestions)"
+        "\(game.currentQuestionIndex + 1) /\(game.numberOfQuestions)"
     }
     var guessWasMade: Bool {
         if let _ = game.guesses[currentQuestion] {

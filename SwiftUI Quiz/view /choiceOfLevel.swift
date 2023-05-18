@@ -9,7 +9,6 @@
 
 import Foundation
 import SwiftUI
-import CoreData
 
 struct choiceOfLevel: View {
     var body: some View {
@@ -64,7 +63,7 @@ struct choiceOfLevel: View {
                             Circle()
                                 //.fill("\(ScoreView.scoreViewModel.percentage)")
                                 .frame(width: 55, height: 55, alignment: .center)
-                                .overlay(Text("95%")
+                                .overlay(Text("Qa1")
                                     .foregroundColor(.gray)
                                      )
                                 .foregroundColor(.black.opacity(0.3))
@@ -80,7 +79,7 @@ struct choiceOfLevel: View {
                             Circle()
                               //.fill("\(ScoreView.scoreViewModel.percentage)")
                                 .frame(width: 55, height: 55, alignment: .center)
-                                .overlay(Text("30%")
+                                .overlay(Text("r")
                                     .foregroundColor(.gray)
                                      )
                                 .foregroundColor(.black.opacity(0.3))

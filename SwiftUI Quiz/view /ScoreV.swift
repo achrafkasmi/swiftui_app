@@ -48,7 +48,7 @@ struct ScoreView: View {
                 Spacer()
                 Button(action: {
                     results.removeAll()
-                    var score = scoreViewModel.percentage
+                    let score = scoreViewModel.percentage
                     results.append("Hello! I passed the quiz, my current score is: \(score)% ")
                     sheet.toggle()
                 }, label: {
