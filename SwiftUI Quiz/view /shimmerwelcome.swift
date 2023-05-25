@@ -8,8 +8,6 @@
 import Foundation
 import SwiftUI
 
-
-
 struct ContentView: View {
     var body: some View {
         levelChoice()
@@ -38,9 +36,7 @@ struct levelChoice: View {
                                 .cornerRadius(40)
                                 
                         })
-                        
                     }
-                
             }
         }
     }
