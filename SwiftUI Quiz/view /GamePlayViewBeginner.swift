@@ -79,6 +79,7 @@ struct GameView: View {
             VStack {
                 ProgressBar(progress: viewModel.progress)
                     .frame(height: 10)
+                    .animation(.linear)
                     .padding()
                 Spacer()
                 QuestionView(question: viewModel.currentQuestion)

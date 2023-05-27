@@ -32,7 +32,7 @@ struct ProgressBar: View {
 
 struct ProgressBar_Previews: PreviewProvider {
     static var previews: some View {
-        ProgressBar(progress: 0.5)
+        ProgressBar(progress: 0.0)
             .frame(height: 10)
             .padding()
             .previewLayout(.sizeThatFits)

@@ -5,7 +5,6 @@
 //  Created by Ow Hi Again Ashraf... on 18/10/2022.
 //
 
-import Foundation
 import SwiftUI
 
 /*class GameViewModel: ObservableObject {
@@ -63,7 +62,7 @@ class GameViewModel: ObservableObject {
     }
     
     var progress: CGFloat {
-        CGFloat(game.currentQuestionIndex + 1) / CGFloat(game.numberOfQuestions)
+        CGFloat(game.currentQuestionIndex) / CGFloat(game.numberOfQuestions)
     }
     
     var guessWasMade: Bool {

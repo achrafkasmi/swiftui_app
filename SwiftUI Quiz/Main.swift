@@ -9,15 +9,15 @@ import Foundation
 import SwiftUI
 import CoreData
 
-
 @main
 struct SwiftUI_QuizApp: App {
-    @StateObject private var datacontroller = Datacontroller()
+    @StateObject private var dataController = Datacontroller()
     @Environment(\.managedObjectContext) var managedObjectContext
+    
     var body: some Scene {
         WindowGroup {
             SplashscreenView()
-               .environment(\.managedObjectContext, datacontroller.container.viewContext)
+                .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
 }

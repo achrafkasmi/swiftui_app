@@ -45,13 +45,30 @@ class Datacontroller: ObservableObject {
         let context = container.viewContext
         do {
             try context.save()
-            print ("Data saved!!! WUHU!!!")
+            print("Data saved!!! WUHU!!!")
         } catch {
-            print ("We could not save the data...")
+            print("We could not save the data...")
         }
     }
+    func updateLevelAttributes(level: Level, beginner: Int64, medium: Int64, advanced: Int64) {
+            level.beginner = beginner
+            level.medium = medium
+            level.advanced = advanced
+            save()
+            // Save the changes after updating the attributes
+        }
     
-    func getAllLevels() -> [Level] {
+    func updateProgressUsingScore(scoreViewModel: ScoreViewModel) {
+            let beginnerProgress = Int64(scoreViewModel.percentage)
+            let mediumProgress = Int64(scoreViewModel.percentage)
+            let advancedProgress = Int64(scoreViewModel.percentage)
+            
+            if let level = getAllLevels().first {
+                updateLevelAttributes(level: level, beginner: beginnerProgress, medium: mediumProgress, advanced: advancedProgress)
+            }
+        }
+    
+    public func getAllLevels() -> [Level] {
         let context = container.viewContext
         let fetchRequest: NSFetchRequest<Level> = Level.fetchRequest()
         do {
@@ -63,3 +80,6 @@ class Datacontroller: ObservableObject {
         }
     }
 }
+
+
+
