@@ -7,7 +7,7 @@
 
 
 
-/*import Foundation
+import Foundation
 import SwiftUI
 
 struct choiceOfLevel: View {
@@ -113,7 +113,7 @@ struct choiceOfLevel_Previews: PreviewProvider {
     static var previews: some View {
         choiceOfLevel()
     }
-}*/
+}
 /* has no error import Foundation
 import SwiftUI
 
@@ -321,7 +321,7 @@ struct choiceOfLevel_Previews: PreviewProvider {
 
 
 
-import Foundation
+/*import Foundation
 import SwiftUI
 import CoreData
 
@@ -419,7 +419,7 @@ struct choiceOfLevel_Previews: PreviewProvider {
     static var previews: some View {
         choiceOfLevel()
     }
-}
+}*/
 
 
 

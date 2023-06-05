@@ -55,18 +55,22 @@ class Datacontroller: ObservableObject {
             level.medium = medium
             level.advanced = advanced
             save()
-            // Save the changes after updating the attributes
         }
     
     func updateProgressUsingScore(scoreViewModel: ScoreViewModel) {
-            let beginnerProgress = Int64(scoreViewModel.percentage)
-            let mediumProgress = Int64(scoreViewModel.percentage)
-            let advancedProgress = Int64(scoreViewModel.percentage)
-            
-            if let level = getAllLevels().first {
-                updateLevelAttributes(level: level, beginner: beginnerProgress, medium: mediumProgress, advanced: advancedProgress)
-            }
+        let beginnerProgress = Int64(scoreViewModel.percentage)
+        let mediumProgress = Int64(scoreViewModel.percentage)
+        let advancedProgress = Int64(scoreViewModel.percentage)
+        
+        if let level = getAllLevels().first {
+            updateLevelAttributes(
+                level: level,
+                beginner: beginnerProgress,
+                medium: level.medium, // Use the existing value for medium progress
+                advanced: level.advanced // Use the existing value for advanced progress
+            )
         }
+    }
     
     public func getAllLevels() -> [Level] {
         let context = container.viewContext

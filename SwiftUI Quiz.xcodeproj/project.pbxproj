@@ -10,6 +10,7 @@
 		2302A44E2A1ED83B00946E9F /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2302A44D2A1ED83B00946E9F /* ProgressBar.swift */; };
 		2302A4502A204CD800946E9F /* GamePlayViewMedium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2302A44F2A204CD800946E9F /* GamePlayViewMedium.swift */; };
 		2302A4522A204E3400946E9F /* GamePlayViewAdvanced.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2302A4512A204E3400946E9F /* GamePlayViewAdvanced.swift */; };
+		2302A4582A22617C00946E9F /* LevelEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2302A4572A22617C00946E9F /* LevelEntity.swift */; };
 		23393FBE2A028C5B00000D77 /* SplashscreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23393FBD2A028C5B00000D77 /* SplashscreenView.swift */; };
 		233DA0E228FEE1E20074AB4A /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233DA0E128FEE1E20074AB4A /* Main.swift */; };
 		233DA0E628FEE1E30074AB4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 233DA0E528FEE1E30074AB4A /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		2302A44D2A1ED83B00946E9F /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		2302A44F2A204CD800946E9F /* GamePlayViewMedium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayViewMedium.swift; sourceTree = "<group>"; };
 		2302A4512A204E3400946E9F /* GamePlayViewAdvanced.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayViewAdvanced.swift; sourceTree = "<group>"; };
+		2302A4572A22617C00946E9F /* LevelEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelEntity.swift; sourceTree = "<group>"; };
 		23393FBD2A028C5B00000D77 /* SplashscreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashscreenView.swift; sourceTree = "<group>"; };
 		233DA0DE28FEE1E20074AB4A /* SwiftUI Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		233DA0E128FEE1E20074AB4A /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
@@ -83,10 +85,10 @@
 		233DA0E028FEE1E20074AB4A /* SwiftUI Quiz */ = {
 			isa = PBXGroup;
 			children = (
-				2360514D2A0BD2AB00C51478 /* helpers */,
+				2360514D2A0BD2AB00C51478 /* Helpers */,
 				236051472A0ACB7C00C51478 /* Datamodel */,
 				233DA0EF28FEE2C70074AB4A /* Main */,
-				233DA0F428FEE4C10074AB4A /* view  */,
+				233DA0F428FEE4C10074AB4A /* Views */,
 			);
 			path = "SwiftUI Quiz";
 			sourceTree = "<group>";
@@ -99,23 +101,23 @@
 			name = Main;
 			sourceTree = "<group>";
 		};
-		233DA0F428FEE4C10074AB4A /* view  */ = {
+		233DA0F428FEE4C10074AB4A /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				233DA0FD28FEE93C0074AB4A /* GameV_M.swift */,
 				23393FBD2A028C5B00000D77 /* SplashscreenView.swift */,
+				23EB6B592910221300A2D450 /* choiceOfLevel.swift */,
 				233DA10728FEEB990074AB4A /* bottomtext.swift */,
 				233DA10928FEED300074AB4A /* QuestionV.swift */,
 				233DA10B28FEED670074AB4A /* ScoreV.swift */,
 				23EB6B57290F42DC00A2D450 /* shimmerwelcome.swift */,
-				23EB6B592910221300A2D450 /* choiceOfLevel.swift */,
 				2302A44D2A1ED83B00946E9F /* ProgressBar.swift */,
 				233DA0E528FEE1E30074AB4A /* Assets.xcassets */,
 				233DA10328FEEA720074AB4A /* GamePlayViewBeginner.swift */,
 				2302A44F2A204CD800946E9F /* GamePlayViewMedium.swift */,
 				2302A4512A204E3400946E9F /* GamePlayViewAdvanced.swift */,
 			);
-			path = "view ";
+			path = Views;
 			sourceTree = "<group>";
 		};
 		236051472A0ACB7C00C51478 /* Datamodel */ = {
@@ -123,11 +125,12 @@
 			children = (
 				236051482A0ACC6600C51478 /* datamodel.xcdatamodeld */,
 				2360514B2A0ACF7200C51478 /* Datacontroller.swift */,
+				2302A4572A22617C00946E9F /* LevelEntity.swift */,
 			);
 			name = Datamodel;
 			sourceTree = "<group>";
 		};
-		2360514D2A0BD2AB00C51478 /* helpers */ = {
+		2360514D2A0BD2AB00C51478 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				233DA0F728FEE65A0074AB4A /* Colorisation .swift */,
@@ -136,7 +139,7 @@
 				233DA10128FEEA300074AB4A /* Choice.swift */,
 				233DA0F928FEE75E0074AB4A /* counters.swift */,
 			);
-			name = helpers;
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23393FBE2A028C5B00000D77 /* SplashscreenView.swift in Sources */,
+				2302A4582A22617C00946E9F /* LevelEntity.swift in Sources */,
 				2302A44E2A1ED83B00946E9F /* ProgressBar.swift in Sources */,
 				23EB6B5A2910221300A2D450 /* choiceOfLevel.swift in Sources */,
 				233DA10028FEE9FB0074AB4A /* Score.swift in Sources */,
